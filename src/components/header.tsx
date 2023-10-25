@@ -3,7 +3,7 @@ import { auth } from "../utils/firebase";
 import { AiOutlineLogout } from "react-icons/ai";
 
 export default function Header() {
-  const [user, loading] = useAuthState(auth);
+  const [user] = useAuthState(auth);
 
   return (
     <header className="flex justify-between items-center gap-20">

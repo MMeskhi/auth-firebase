@@ -9,8 +9,7 @@ function App() {
 
   return (
     <main className="py-14 px-40 min-h-screen">
-      {!user && <Intro />}
-      {user && <ListBoard />}
+      {user ? <ListBoard /> : <Intro />}
     </main>
   );
 }
